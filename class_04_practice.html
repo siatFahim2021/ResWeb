@@ -1,0 +1,167 @@
+ <!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>class_04_Practice</title>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+        }
+        .menu{
+            min-height: 45px;
+            background-color: blue;
+        }
+        .menu ul {
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        .menu ul li{
+            float: left;
+            list-style: none;
+            border-right: 1px solid black;
+            position:relative;
+        }
+        .menu ul li:last-child{
+            border-right:none;
+        }
+        .menu ul li a{
+            padding: 13px 56.7px;
+            text-decoration: none;
+            display: block;
+            color: white;
+            transition:1s;
+        }
+        .menu ul li a:hover{
+            background-color: darkblue;
+            transform: rotate(360deg) scale(1.1);
+        }
+        
+        
+        /*dropdown menubar */
+        
+        .menu ul li ul{
+            background-color: blue;
+            margin: 0px;
+            padding: 0px;
+            position:absolute;
+            left: -999999px;
+            width: 210px;
+        }
+        .menu ul li:hover ul{
+            left:0px;
+            
+        }
+        .menu ul li ul li{
+            float: none;
+            border-right:none;
+            border-bottom:1px solid black; 
+        }
+        .menu ul li ul li:first-child{
+            border-top:1px solid black;
+        }
+        .menu ul li ul li a{
+            padding:13px 36px;
+        }
+        .menu ul li ul li a:hover{
+          background-color: darkblue;
+        }
+        
+        /*gallery */
+        .gallery{
+            margin-top: 3px;
+        }
+        .single_gallery{
+                min-height: 350px;
+                width: 20%;
+                float: left;
+                margin: 2%;
+                border: 1px solid black;
+        }
+        .photo_section{
+            border: ;
+            width:150px;
+            height: 250px;
+            margin:59px auto;
+            transition:2s;
+        }
+        .photo_section:hover img{
+            transform: scale(1.6);
+        }
+        .photo_section img{
+            height: 200px;
+            width: 150px;
+            margin:;
+            transition: 2s;
+        }
+        .caption{
+            text-align: center;
+        }
+        .caption p{
+            color: blue;
+            font-weight: bold;
+        }
+        
+        
+        
+    </style>
+    </head>
+    <body>
+        <div class="header">
+          <div class="menu_wrapper">
+            <div class="menu">
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Abous us</a></li>
+                <li><a href="">Our Mentors</a></li>
+                <li><a href="">Our Courses</a>
+                  <ul>
+                      <li><a href="">Web degign</a></li>
+                      <li><a href="">Web development</a></li>
+                      <li><a href="">graphic densig</a></li>
+                      <li><a href="">android</a></li>
+
+                    </ul>
+                  </li>
+                <li><a href="">Contact us</a></li>
+                </ul>
+              </div>
+            </div>  
+        </div>
+        <div class="gallery">
+            <div class="single_gallery">
+                <div class="photo_section">
+                    <img src="images/image.jpg.jpg" alt="image missing">
+                </div>
+                <div class="caption">
+                    <p>shikhbe shobai</p>
+                </div>
+            </div>
+            <div class="single_gallery">
+                <div class="photo_section">
+                    <img src="images/image.jpg.jpg" alt="image missing">
+                </div>
+                <div class="caption">
+                    <p>shikhbe shobai</p>
+                </div>
+            </div>
+            <div class="single_gallery">
+                <div class="photo_section">
+                    <img src="images/image.jpg.jpg" alt="image missing">
+                </div>
+                <div class="caption">
+                    <p>shikhbe shobai</p>
+                </div>
+            </div>
+            <div class="single_gallery">
+                <div class="photo_section">
+                    <img src="images/image.jpg.jpg" alt="image missing">
+                </div>
+                <div class="caption">
+                    <p>shikhbe shobai</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
